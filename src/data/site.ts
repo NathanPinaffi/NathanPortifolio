@@ -31,7 +31,7 @@ export const techs = [
   { name: "PostgreSQL", category: "Banco" },
   { name: "Docker", category: "DevOps" },
   { name: "AWS", category: "Cloud" },
-  { name: "IA Generativa", category: "IA" },
+  { name: "Cloud e Perplexity", category: "IA" },
   { name: "OpenAI APIs", category: "IA" },
 ] as const;
 

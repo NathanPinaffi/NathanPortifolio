@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { AnimatedUnderline } from "@/components/ui/AnimatedUnderline";
 import { Counter } from "@/components/ui/Counter";
 import { stats } from "@/data/site";
 import eu from "@/assets/eu.png";
@@ -60,7 +61,7 @@ export function About() {
             eyebrow="Sobre mim"
             title={
               <>
-                Engenharia, design e <span className="text-gradient-violet">IA</span>{" "}
+                Engenharia, design e <AnimatedUnderline>inteligência artificial</AnimatedUnderline>{" "}
                 em um só lugar.
               </>
             }

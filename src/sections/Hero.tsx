@@ -6,7 +6,6 @@ import { AnimatedUnderline } from "@/components/ui/AnimatedUnderline";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { ScrollArrow } from "@/components/ui/ScrollArrow";
 import { site } from "@/data/site";
-import { StatusRibbon } from "@/components/StatusRibbon";
 
 const fadeUp = {
   initial: { opacity: 0, y: 28 },
@@ -31,7 +30,7 @@ export function Hero() {
           className="mt-7 font-display text-[44px] leading-[1.02] text-white sm:text-6xl md:text-7xl lg:text-[88px]"
         >
           Transformando ideias em{" "}
-          <AnimatedUnderline>software extraordinário</AnimatedUnderline>
+          <AnimatedUnderline>softwares extraordinários</AnimatedUnderline>
           <span className="text-white/90">.</span>
         </motion.h1>
 
@@ -68,8 +67,6 @@ export function Hero() {
           className="absolute bottom-2 left-1/2 -translate-x-1/2 animate-float-y"
         >
         </motion.div>
-        <br />
-        <br />
         <br />
         <br />
         <ScrollArrow />

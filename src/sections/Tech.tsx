@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { AnimatedUnderline } from "@/components/ui/AnimatedUnderline";
 import { techs } from "@/data/site";
 
 function TiltCard({ name, category }: { name: string; category: string }) {
@@ -60,7 +61,7 @@ export function Tech() {
           title={
             <>
               Ferramentas que uso para construir{" "}
-              <span className="text-gradient-violet">produtos premium</span>.
+              <AnimatedUnderline>aplicações únicas</AnimatedUnderline>.
             </>
           }
           description="Do front-end refinado ao back-end resiliente, passando por modelos de IA generativa e infraestrutura em nuvem."
