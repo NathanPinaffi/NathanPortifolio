@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { AnimatedUnderline } from "@/components/ui/AnimatedUnderline";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 import { timeline } from "@/data/site";
 
@@ -42,7 +43,7 @@ export function Timeline() {
           eyebrow="Jornada"
           title={
             <>
-              Uma <span className="text-gradient-violet">linha do tempo</span> da
+              Uma <AnimatedUnderline>linha do tempo</AnimatedUnderline> da
               minha trajetória.
             </>
           }

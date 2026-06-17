@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Github, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { AnimatedUnderline } from "@/components/ui/AnimatedUnderline";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { site } from "@/data/site";
 
@@ -23,7 +24,7 @@ export function Social() {
             eyebrow="Redes"
             title={
               <>
-                Vamos nos <span className="text-gradient-violet">conectar</span>.
+                Vamos nos <AnimatedUnderline>conectar!</AnimatedUnderline>.
               </>
             }
           />

@@ -4,6 +4,7 @@ import { ArrowUpRight, Github } from "lucide-react";
 
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { AnimatedUnderline } from "@/components/ui/AnimatedUnderline";
 
 import { getGithubProjects } from "@/services/github";
 
@@ -44,10 +45,9 @@ export function Projects() {
           title={
             <>
               Produtos que misturam{" "}
-              <span className="text-gradient-violet">
-                design
-              </span>
-              , engenharia e IA.
+              <AnimatedUnderline>design</AnimatedUnderline>
+              , <AnimatedUnderline>engenharia</AnimatedUnderline> e 
+              <AnimatedUnderline>IA</AnimatedUnderline>.
             </>
           }
         />
@@ -169,7 +169,7 @@ export function Projects() {
                       {p.title}
                     </h3>
 
-                    <p className="mt-2 text-sm text-white/60 line-clamp-3">
+                    <p className="mt-2 min-h-[72px] text-sm text-white/60 line-clamp-3">
                       {p.description}
                     </p>
 

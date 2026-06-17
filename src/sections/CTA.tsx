@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { AuroraBackground } from "@/components/effects/AuroraBackground";
+import { AnimatedUnderline } from "@/components/ui/AnimatedUnderline";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { site } from "@/data/site";
 
@@ -18,7 +19,7 @@ export function CTA() {
             className="relative z-10 font-display text-4xl leading-[1.05] text-white sm:text-6xl"
           >
             Vamos construir algo{" "}
-            <span className="text-gradient-violet">incrível</span> juntos.
+            <AnimatedUnderline>extraordinários</AnimatedUnderline> juntos.
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 16 }}
