@@ -6,6 +6,7 @@ import { AnimatedUnderline } from "@/components/ui/AnimatedUnderline";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { ScrollArrow } from "@/components/ui/ScrollArrow";
 import { site } from "@/data/site";
+import { StatusRibbon } from "@/components/StatusRibbon";
 
 const fadeUp = {
   initial: { opacity: 0, y: 28 },
@@ -14,6 +15,7 @@ const fadeUp = {
 
 export function Hero() {
   return (
+    <>
     <section
       id="top"
       className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-32 pb-24"
@@ -66,10 +68,13 @@ export function Hero() {
           className="absolute bottom-2 left-1/2 -translate-x-1/2 animate-float-y"
         >
         </motion.div>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
+        <br />
         <ScrollArrow />
       </div>
     </section>
+    </>
   );
 }
