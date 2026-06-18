@@ -10,7 +10,3 @@ export const router = createRouter({
   scrollRestoration: true,
   defaultPreloadStaleTime: 0,
 });
-
-export const getRouter = () => {
-  return router
-}
