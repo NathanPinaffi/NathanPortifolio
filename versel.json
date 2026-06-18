@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "bunVersion": "1.x",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ],
+  "framework": null,
+  "buildCommand": "vite build",
+  "outputDirectory": ".output"
+}
