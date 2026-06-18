@@ -1,6 +1,8 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import tsr from '@tanstack/router-plugin/vite';
 
 export default defineConfig({
+  plugins: [tsr()],
   tanstackStart: {
     server: { entry: "server" },
   },
