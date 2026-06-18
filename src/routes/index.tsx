@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "@tanstack/react-router";
-import { router } from '@/router'
+import { getRouter } from '@/router'
 
 import { createFileRoute } from "@tanstack/react-router";
 import { CursorGlow } from "@/components/effects/CursorGlow";
@@ -14,6 +14,8 @@ import { Timeline } from "@/sections/Timeline";
 import { Social } from "@/sections/Social";
 import { CTA } from "@/sections/CTA";
 import { Footer } from "@/sections/Footer";
+
+const router = getRouter();
 
 export const Route = createFileRoute("/")({
   head: () => ({
