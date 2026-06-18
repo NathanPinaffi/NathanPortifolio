@@ -4,6 +4,10 @@ import { routeTree } from "./routeTree.gen";
 
 const queryClient = new QueryClient();
 
+export const getRouter = () => {
+  return router
+}
+
 export const router = createRouter({
     routeTree,
     context: { queryClient },
